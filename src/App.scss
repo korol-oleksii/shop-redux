@@ -1,0 +1,37 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 100%;
+}
+
+//header
+.header {
+  padding: 24px 32px 0;
+}
+.nav {
+  ul {
+    display: flex;
+    gap: 16px;
+
+    a {
+      display: block;
+      padding: 8px 16px;
+      background-color: transparent;
+      color: black;
+
+      &.active {
+        background-color: #3389f1;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.main {
+  height: 100%;
+  padding: 24px 32px;
+}

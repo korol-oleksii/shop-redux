@@ -1,0 +1,32 @@
+.cart__container {
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.cart__fields {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 0 0 320px;
+}
+.cart__products {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1 1;
+}
+.cart__total {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1 1 100%;
+}
+.cart__total button {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.cart__total button:hover {
+  transform: scale(0.96);
+}
+
+/*# sourceMappingURL=ShoppingCart.css.map */

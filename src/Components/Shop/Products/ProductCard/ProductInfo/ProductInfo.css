@@ -1,0 +1,74 @@
+.product {
+  height: 100%;
+}
+.product-image {
+  max-width: 400px;
+  width: 100%;
+  height: 400px;
+  flex: 0 1 400px;
+}
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.product-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.product-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.product-category {
+  text-transform: capitalize;
+  color: gray;
+}
+.product-buy {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.product-buy__price {
+  font-weight: 900;
+  font-size: 24px;
+}
+.product-buy__action button {
+  font-size: 18px;
+  border: 1px solid #e0e0e0;
+  padding: 8px 24px;
+  border-radius: 16px;
+}
+.product-buy__action button:hover {
+  background-color: #3389f1;
+  color: #fff;
+}
+.product-buy__amount {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  display: flex;
+}
+.product-buy__amount .button {
+  width: 40px;
+}
+.product-buy__amount .button__text {
+  font-weight: 600;
+  font-size: 20px;
+  color: #3389f1;
+}
+.product-buy__amount .input-amount {
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 0;
+  border-top: none;
+  border-bottom: none;
+}
+
+/*# sourceMappingURL=ProductInfo.css.map */

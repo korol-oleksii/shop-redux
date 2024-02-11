@@ -1,0 +1,20 @@
+.loading {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: conic-gradient(rgba(0, 0, 0, 0) 10%, #3389f1);
+  mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 4px), #000 0);
+  animation: loading 1s infinite linear;
+  margin: 24px auto;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=Preloader.css.map */
