@@ -1,15 +1,19 @@
 .cart {
   border-bottom: 1px solid #e0e0e0;
-  margin: 16px 0;
-  padding-bottom: 16px;
-  gap: 8px;
+  margin: 0;
+  padding: 24px 0;
+  gap: 8px 24px;
+}
+.cart:first-child {
+  padding-top: 0;
 }
 .cart:last-child {
   border-bottom: none;
+  padding-bottom: 0;
 }
 .cart__image {
   height: 150px;
-  flex: 0 0 250px;
+  flex: 0 0 150px;
 }
 .cart__image img {
   width: 100%;
@@ -27,8 +31,9 @@
   color: gray;
 }
 .cart__price {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
+  padding: 8px 0;
 }
 .cart__action {
   align-items: center;

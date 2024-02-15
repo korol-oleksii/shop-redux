@@ -7,12 +7,29 @@
     flex: 0 0 320px;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 16px;
+    padding: 16px 0;
 
     ul {
       display: flex;
       flex-direction: column;
       gap: 8px;
+      position: sticky;
+      top: 100px;
+
+      li {
+        text-transform: capitalize;
+        font-size: 14px;
+
+        a {
+          padding: 8px 16px;
+          display: flex;
+          color: #202020;
+        }
+
+        .active {
+          font-weight: 600;
+        }
+      }
     }
   }
 

@@ -3,19 +3,22 @@ import buySvg from '../../../../assets/img/buy.svg';
 import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {addProductsToCart} from "../../../../data/reducers/shoppingCartReducer";
+import {useState} from "react";
 
 const ProductCard = ({product}) => {
 
     let dispatch = useDispatch();
-
     let navigate = useNavigate();
 
     const ShowMoreHandler = () => {
         navigate(`/product/${product.id}`)
     }
 
+    let [qnt, setQnt] = useState(0);
+
     const AddProductToCartHandler = () => {
         dispatch(addProductsToCart(product));
+        setQnt(qnt + 1);
     }
 
     return (
@@ -42,6 +45,9 @@ const ProductCard = ({product}) => {
                 <div className="card__action--add-cart">
                     <button onClick={AddProductToCartHandler}>
                         <img src={buySvg} alt="Add to Cart"/>
+                        {
+                            qnt < 1 ? '' : <span className="counter-badge">{qnt}</span>
+                        }
                     </button>
                 </div>
             </div>

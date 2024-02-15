@@ -2,3 +2,28 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.filter {
+  padding: 0 16px;
+
+  &__body {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    gap: 8px;
+    align-items: center;
+  }
+
+  button {
+    border: 1px solid #909090;
+    border-radius: 8px;
+    padding: 8px 16px;
+
+    &:hover {
+      transform: scale(.97);
+    }
+  }
+}

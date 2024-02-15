@@ -1,3 +1,4 @@
+import buyImg from '../../assets/img/buy.svg'
 import {useDispatch, useSelector} from "react-redux";
 import ProductInCart from "./ProductInCart/ProductInCart";
 import './ShoppingCart.css';
@@ -9,13 +10,13 @@ import BasketEmpty from "./BasketEmpty/BasketEmpty";
 const ShoppingCart = () => {
 
     let productsInCart = useSelector(state => state.shoppingCart.productsInCart);
-    let isPreloader = useSelector(state => state.shoppingCart.isPreloader)
+    let isPreloader = useSelector(state => state.shoppingCart.isPreloader);
 
     let dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(setPreloader(true))
-    }, [productsInCart]);
+        dispatch(setPreloader(true));
+    }, []);
 
     return (
         isPreloader ?
@@ -44,9 +45,27 @@ const ShoppingCart = () => {
                         productsInCart.length ? productsInCart.map(productInCart => <ProductInCart productInCart={productInCart} key={productInCart.id}/>) : <BasketEmpty/>
                     }
                 </div>
-                <div className="cart__total">
-                    <h3>Total price: {productsInCart.reduce((acc, productInCart) => acc + productInCart.price, 0)}</h3>
-                    <button>Submit</button>
+                <div className="cart__total mesh--row">
+                    <div className="cart__total--price">
+                        <div className="mesh--row">
+                            <h3>Total price:</h3>
+                            <div className="text-price">
+                                {productsInCart.length > 0 ? <>$</> : ''}{productsInCart.reduce((acc, productInCart) => (acc + productInCart.price) * productInCart.counter, 0).toFixed(2)}
+                            </div>
+                        </div>
+                        {
+                            productsInCart.length ?
+                            <div className="cart-total-qnt mesh--row">
+                                Total count products:
+                                <strong>
+                                    {productsInCart.reduce((acc, productInCart) => acc + productInCart.counter, 0)}
+                                </strong>
+                            </div> : ''
+                        }
+                    </div>
+                    <button>
+                        <img src={buyImg} alt="order"/> Order
+                    </button>
                 </div>
             </div>
         </div>

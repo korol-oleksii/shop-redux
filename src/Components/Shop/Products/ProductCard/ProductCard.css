@@ -50,6 +50,9 @@
 .card__action--show-more button:hover {
   transform: scale(0.96);
 }
+.card__action--add-cart {
+  position: relative;
+}
 .card__action--add-cart button {
   width: 40px;
   height: 40px;

@@ -3,4 +3,25 @@
   flex-wrap: wrap;
 }
 
+.filter {
+  padding: 0 16px;
+}
+.filter__body {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+.filter__item {
+  gap: 8px;
+  align-items: center;
+}
+.filter button {
+  border: 1px solid #909090;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+.filter button:hover {
+  transform: scale(0.97);
+}
+
 /*# sourceMappingURL=Products.css.map */

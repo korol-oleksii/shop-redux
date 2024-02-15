@@ -1,12 +1,15 @@
 import './ProductInCart.css';
 import {useDispatch} from "react-redux";
-import {removeProductFromCart} from "../../../data/reducers/shoppingCartReducer";
+import {
+    removeProductFromCart,
+    setCountDecrement,
+    setCount
+} from "../../../data/reducers/shoppingCartReducer";
 import {useNavigate} from "react-router-dom";
 
 const ProductInCart = ({productInCart}) => {
 
     let dispatch = useDispatch();
-
     let navigate = useNavigate();
 
     const ShowMoreHandler = () => {
@@ -15,6 +18,16 @@ const ProductInCart = ({productInCart}) => {
 
     const removeProductHandler = () => {
         dispatch(removeProductFromCart(productInCart))
+    }
+
+    const onChangeCountHandler = () => {
+        dispatch(setCount(productInCart))
+    }
+    const countIncrementHandler = () => {
+        dispatch(setCount(productInCart))
+    }
+    const countDecrementHandler = () => {
+        dispatch(setCountDecrement(productInCart))
     }
 
     return (
@@ -33,17 +46,17 @@ const ProductInCart = ({productInCart}) => {
                     <div className="text text-ellipse-3">{productInCart.description}</div>
                 </div>
                 <div className="cart__price">
-                    ${productInCart.price}
+                    ${(productInCart.price * productInCart.counter).toFixed(2)}
                 </div>
                 <div className="cart__action mesh--row">
                     <div className="product-buy__amount">
-                        <button className="button button--decrement">
+                        <button className="button button--decrement" onClick={countDecrementHandler}>
                             <span className="button__text">
                                 &ndash;
                             </span>
                         </button>
-                        <input className="input input-amount" type="number" value="1"/>
-                        <button className="button button--increment">
+                        <input className="input input-amount" type="number" onChange={onChangeCountHandler} value={productInCart.counter}/>
+                        <button className="button button--increment" onClick={countIncrementHandler}>
                             <span className="button__text">
                                 +
                             </span>
