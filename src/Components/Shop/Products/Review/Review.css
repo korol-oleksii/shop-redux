@@ -1,0 +1,27 @@
+.Review {
+  margin-top: 32px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 16px;
+}
+.Review:last-child {
+  border-bottom: none;
+}
+.Review .product-review__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.Review .product-review__item .name {
+  font-weight: bold;
+}
+.Review .product-review__item .date {
+  font-size: 10px;
+  color: #909090;
+  text-align: right;
+}
+.Review .product-review__item .date .text--date {
+  color: #404040;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=Review.css.map */

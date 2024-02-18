@@ -1,6 +1,7 @@
 .product {
   height: 100%;
   gap: 32px;
+  flex-wrap: wrap;
 
   &-image {
     max-width: 400px;
@@ -81,4 +82,29 @@
       }
     }
   }
+
+  &-rating {
+    .rate {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      font-weight: 600;
+
+      svg {
+        width: 16px;
+
+        fill: orange;
+      }
+    }
+  }
+
+  &-review {
+    flex: 1 1 100%;
+    max-width: 480px;
+
+    &__form {
+      gap: 16px;
+    }
+  }
+
 }

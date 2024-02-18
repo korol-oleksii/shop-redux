@@ -6,10 +6,13 @@
   flex: 1 1 calc(33.3333333333% - 16px);
   max-width: 289px;
   min-width: 260px;
-  border: 1px solid #cecdcd;
   margin: 8px;
   border-radius: 8px;
-  padding: 16px;
+  padding: 24px 16px 16px;
+  transition: 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(32, 32, 32, 0.15);
 }
 .card__image {
   height: 280px;
@@ -35,6 +38,18 @@
   font-size: 18px;
   line-height: 20px;
   font-weight: 600;
+  gap: 8px;
+  justify-content: space-between;
+}
+.card__price .rating {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+}
+.card__price .rating svg {
+  width: 16px;
+  fill: orange;
 }
 .card__action {
   gap: 16px;

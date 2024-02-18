@@ -7,7 +7,7 @@ import {
     setPreloader,
     setProducts, setSortById,
     setSortByMaxPrice,
-    setSortByMinPrice,
+    setSortByMinPrice, setSortByRating,
     setSortByTitle
 } from "../../../data/reducers/shopReducer";
 import Preloader from "../../Preloader/Preloader";
@@ -43,11 +43,19 @@ const Products = () => {
     const sortByIdHandler = () => {
         dispatch(setSortById(products));
     }
+    const sortByRatingHandler = () => {
+        dispatch(setSortByRating(products));
+    }
 
     return (
         <>
             <div className="filter">
                 <div className="filter__body">
+                    <div className="filter__item mesh--row" data-flex="1">
+                        <button className="btn-rating" onClick={sortByRatingHandler}>
+                            Sort by Rating
+                        </button>
+                    </div>
                     <div className="filter__item mesh--row">
                         <button onClick={sortByIdHandler}>Sort by Date</button>
                     </div>

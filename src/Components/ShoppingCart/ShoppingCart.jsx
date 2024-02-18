@@ -23,21 +23,26 @@ const ShoppingCart = () => {
         <div className="ShoppingCart cart">
             <div className="cart__container mesh--row">
                 <div className="cart__fields">
+                    <h3 className="side-title">Placing an order</h3>
                     <div className="row">
-                        <h3>Name:</h3>
-                        <input className="input" type="text"/>
+                        <input className="input" type="text" placeholder=""/>
+                        <span className="text--placeholder">Name</span>
                     </div>
                     <div className="row">
-                        <h3>Email:</h3>
-                        <input className="input" type="email"/>
+                        <input className="input" type="email" placeholder=""/>
+                        <span className="text--placeholder">Email</span>
                     </div>
                     <div className="row">
-                        <h3>Phone:</h3>
-                        <input className="input" type="tel"/>
+                        <input className="input" type="tel" placeholder=""/>
+                        <span className="text--placeholder">Phone</span>
                     </div>
                     <div className="row">
-                        <h3>Address:</h3>
-                        <input className="input" type="text"/>
+                        <input className="input" type="text" placeholder=""/>
+                        <span className="text--placeholder">Address</span>
+                    </div>
+                    <div className="row">
+                        <textarea className="input input--textarea" placeholder=""/>
+                        <span className="text--placeholder">Comment</span>
                     </div>
                 </div>
                 <div className="cart__products">
@@ -56,9 +61,10 @@ const ShoppingCart = () => {
                         {
                             productsInCart.length ?
                             <div className="cart-total-qnt mesh--row">
-                                Total count products:
+                                Total quantity products:
                                 <strong>
                                     {productsInCart.reduce((acc, productInCart) => acc + productInCart.counter, 0)}
+                                    <span className="text--small"> units</span>
                                 </strong>
                             </div> : ''
                         }

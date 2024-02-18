@@ -20,6 +20,15 @@
   border-radius: 8px;
   padding: 8px 16px;
 }
+.filter button.btn-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.filter button.btn-rating svg {
+  width: 16px;
+  fill: orange;
+}
 .filter button:hover {
   transform: scale(0.97);
 }

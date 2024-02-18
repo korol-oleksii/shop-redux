@@ -1,13 +1,12 @@
 .Shop {
   display: flex;
-  gap: 32px;
-  min-height: 100%;
+  gap: 16px;
+  height: 100%;
 }
 .Shop nav {
   flex: 0 0 320px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 16px 0;
+  border-right: 1px solid #e0e0e0;
+  padding: 0 0 16px;
 }
 .Shop nav ul {
   display: flex;
@@ -21,18 +20,20 @@
   font-size: 14px;
 }
 .Shop nav ul li a {
-  padding: 8px 16px;
+  padding: 8px;
   display: flex;
   color: #202020;
+}
+.Shop nav ul li a:hover {
+  background-color: #f0f0f0;
 }
 .Shop nav ul li .active {
   font-weight: 600;
 }
 .Shop .products {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 16px;
+  padding: 0 16px 16px;
   flex: 1 1 auto;
+  height: 100%;
 }
 
 /*# sourceMappingURL=Shop.css.map */

@@ -9,7 +9,7 @@ import {setCategory} from "../../data/reducers/shopReducer";
 
 const Shop = () => {
 
-    let categories = useSelector(state => state.shop.category);
+    let categories = useSelector(state => state.shop.categories);
     let dispatch = useDispatch();
 
     useEffect(() => {
@@ -20,6 +20,7 @@ const Shop = () => {
     return (
         <div className="Shop">
             <nav className="nav-side">
+                <h3 className="side-title">Categories:</h3>
                 <ul>
                     <li><NavLink to="/">All products</NavLink></li>
                     {

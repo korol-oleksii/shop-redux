@@ -1,6 +1,7 @@
 .product {
   height: 100%;
   gap: 32px;
+  flex-wrap: wrap;
 }
 .product-image {
   max-width: 400px;
@@ -70,6 +71,23 @@
   border-radius: 0;
   border-top: none;
   border-bottom: none;
+}
+.product-rating .rate {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 600;
+}
+.product-rating .rate svg {
+  width: 16px;
+  fill: orange;
+}
+.product-review {
+  flex: 1 1 100%;
+  max-width: 480px;
+}
+.product-review__form {
+  gap: 16px;
 }
 
 /*# sourceMappingURL=ProductInfo.css.map */

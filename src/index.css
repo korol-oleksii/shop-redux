@@ -13,7 +13,7 @@
 }
 
 html, body {
-  background-color: beige;
+  background-color: #fff;
   font: 14px/18px Arial, sans-serif;
   height: 100%;
 }
@@ -41,7 +41,8 @@ html, body {
   }
 }
 #root {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 [disabled] {
@@ -107,6 +108,10 @@ input[type=number]:focus {
   border-radius: 4px;
   transition: 0.2s;
 }
+.input--textarea {
+  min-height: 100px;
+  padding: 12px 8px;
+}
 .input:focus {
   outline: 0;
   border: 1px solid #909090;
@@ -122,6 +127,13 @@ input[type=number]:focus {
   background-color: #fff;
   z-index: 1;
   padding: 2px 8px;
+}
+.input.invalid {
+  border-color: red;
+}
+
+.text--placeholder {
+  top: 0;
 }
 
 textarea {
@@ -166,6 +178,9 @@ h1, h2, h3, h4, h5, h6 {
 .text {
   line-height: 21px;
 }
+.text--normal {
+  font-weight: 400;
+}
 .text--small {
   font-size: 10px;
   line-height: 12px;
@@ -207,6 +222,10 @@ h1, h2, h3, h4, h5, h6 {
 
 [data-flex="1"] {
   flex: 1 1 auto;
+}
+
+.rel--area {
+  position: relative;
 }
 
 @keyframes load {

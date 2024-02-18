@@ -1,0 +1,31 @@
+.Review {
+  margin-top: 32px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 16px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .product-review {
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .name {
+        font-weight: bold;
+      }
+      .date {
+        font-size: 10px;
+        color: #909090;
+        text-align: right;
+
+        .text--date {
+          color: #404040;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

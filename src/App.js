@@ -1,3 +1,4 @@
+import cartIcon from './assets/img/cart.svg';
 import './App.css';
 import {NavLink, Route, Routes} from "react-router-dom";
 import Shop from "./Components/Shop/Shop";
@@ -13,10 +14,11 @@ function App() {
             <header className="header">
                 <nav className="nav">
                     <ul>
-                        <li><NavLink to='/'>Shop</NavLink></li>
+                        <li data-flex="1"><NavLink to='/'>Shop</NavLink></li>
                         <li>
                             <NavLink to='/shoppingCart'>
                                 Shopping Cart
+                                <img src={cartIcon} alt=""/>
                                 {productsInCart.length ?
                                     <span className="counter-badge">{productsInCart.length}</span> : ''}
                             </NavLink>

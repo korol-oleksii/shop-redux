@@ -11,6 +11,12 @@
   flex: 0 0 320px;
   overflow: auto;
   height: calc(100vh - 264px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cart__fields .row {
+  position: relative;
 }
 .cart__products {
   padding: 16px;
