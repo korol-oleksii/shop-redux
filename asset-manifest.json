@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/shop-redux/static/css/main.24431cae.css",
-    "main.js": "/shop-redux/static/js/main.27c2d481.js",
+    "main.js": "/shop-redux/static/js/main.aa3119cf.js",
     "static/media/buy.svg": "/shop-redux/static/media/buy.ce71e351a18316bd17f06837aff307c5.svg",
     "index.html": "/shop-redux/index.html",
     "static/media/cart.svg": "/shop-redux/static/media/cart.a27d088d5a4c03591653cda965809a66.svg",
     "main.24431cae.css.map": "/shop-redux/static/css/main.24431cae.css.map",
-    "main.27c2d481.js.map": "/shop-redux/static/js/main.27c2d481.js.map"
+    "main.aa3119cf.js.map": "/shop-redux/static/js/main.aa3119cf.js.map"
   },
   "entrypoints": [
     "static/css/main.24431cae.css",
-    "static/js/main.27c2d481.js"
+    "static/js/main.aa3119cf.js"
   ]
 }
