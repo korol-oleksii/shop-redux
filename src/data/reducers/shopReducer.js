@@ -11,6 +11,7 @@ const productSlice = createSlice({
             {id: 3, name: 'Robert', comment: 'Lorem ipsum dolor sit amet, consectetur!.', date: '10.02.2024, 10:00:12'},
         ],
         isPreloader: false,
+        popularProducts: []
     },
     reducers: {
         setProducts(state, action) {
@@ -24,6 +25,15 @@ const productSlice = createSlice({
         },
         setPreloader(state, action) {
             return {...state, isPreloader: action.payload}
+        },
+        //popularProducts
+        setPopularProducts(state, action) {
+            return {
+                ...state,
+                popularProducts: [...state.popularProducts, ...action.payload]
+                    .filter(popularProduct => popularProduct.rating.rate > 4)
+                    // .sort((a, b) => a.rating.rate - b.rating.rate).reverse()
+            }
         },
         // sorting
         setSortByMinPrice(state) {
@@ -74,6 +84,6 @@ const productSlice = createSlice({
     }
 })
 
-export const {setProducts, setCategory, setProductInfo, setPreloader, setCount, setSortByMinPrice, setSortByMaxPrice,setSortByTitle, setSortById, setSortByRating, setReviews} = productSlice.actions
+export const {setProducts, setCategory, setProductInfo, setPreloader, setCount, setSortByMinPrice, setSortByMaxPrice,setSortByTitle, setSortById, setSortByRating, setReviews, setPopularProducts} = productSlice.actions
 
 export default productSlice.reducer

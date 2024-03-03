@@ -22,7 +22,6 @@ const Shop = () => {
             <nav className="nav-side">
                 <h3 className="side-title">Categories:</h3>
                 <ul>
-                    <li><NavLink to="/">All products</NavLink></li>
                     {
                         categories.map((category, index) => <li key={index}><NavLink to={category}>{category}</NavLink></li>)
                     }

@@ -16,6 +16,7 @@ html, body {
   background-color: #fff;
   font: 14px/18px Arial, sans-serif;
   height: 100%;
+  width: calc(100vw - 8px);
 }
 
 @media (any-hover: hover) {
@@ -43,6 +44,7 @@ html, body {
 #root {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 [disabled] {

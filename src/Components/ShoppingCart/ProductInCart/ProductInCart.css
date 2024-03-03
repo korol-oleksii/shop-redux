@@ -22,6 +22,7 @@
 }
 .cart__desc {
   gap: 8px;
+  flex: 1;
 }
 .cart__title {
   font-weight: 600;

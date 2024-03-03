@@ -4,10 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46cfc027-c6bb-4c00-94ea-d6c96c8ced4e" name="Changes" comment="add reviews, rating, sort by rating, reStyle pages atc.">
+    <list default="true" id="46cfc027-c6bb-4c00-94ea-d6c96c8ced4e" name="Changes" comment="save productsCart and reviews to LocalStorage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Shop/Products/ProductInfo/ProductInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Shop/Products/ProductInfo/ProductInfo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Shop/Products/ProductInfo/ProductInfo.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Shop/Products/ProductInfo/ProductInfo.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Shop/Products/ProductInfo/ProductInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Shop/Products/ProductInfo/ProductInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Shop/Products/ProductInfo/ProductInfo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Shop/Products/ProductInfo/ProductInfo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Shop/Shop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Shop/Shop.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ShoppingCart/BasketEmpty/BasketEmpty.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ShoppingCart/BasketEmpty/BasketEmpty.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ShoppingCart/ProductInCart/ProductInCart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ShoppingCart/ProductInCart/ProductInCart.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ShoppingCart/ProductInCart/ProductInCart.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ShoppingCart/ProductInCart/ProductInCart.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ShoppingCart/ProductInCart/ProductInCart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ShoppingCart/ProductInCart/ProductInCart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/reducers/shopReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/reducers/shopReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +38,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="JSX File" />
         <option value="SCSS File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -43,25 +60,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.deploy.executor": "Run",
-    "npm.start.executor": "Run",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PhpStorm 2023.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.deploy.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PhpStorm 2023.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyLessons\cyberBionic-REACT\project\shop-redux\src\Components\PopularProducts\ViewedCard" />
+      <recent name="D:\MyLessons\cyberBionic-REACT\project\shop-redux\src\Components\PopularProducts" />
       <recent name="D:\MyLessons\cyberBionic-REACT\project\shop-redux\src\Components\Shop\Products" />
     </key>
   </component>
@@ -110,6 +129,8 @@
       <updated>1707933505075</updated>
       <workItem from="1707933510016" duration="47788000" />
       <workItem from="1708162005305" duration="25367000" />
+      <workItem from="1708277938376" duration="2211000" />
+      <workItem from="1708767896450" duration="38022000" />
     </task>
     <task id="LOCAL-00001" summary="any more changes">
       <option name="closed" value="true" />
@@ -127,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708275888362</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="save productsCart and reviews to LocalStorage">
+      <option name="closed" value="true" />
+      <created>1708278653410</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708278653411</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +168,7 @@
     <MESSAGE value="init ph-pages and add basename" />
     <MESSAGE value="any more changes" />
     <MESSAGE value="add reviews, rating, sort by rating, reStyle pages atc." />
-    <option name="LAST_COMMIT_MESSAGE" value="add reviews, rating, sort by rating, reStyle pages atc." />
+    <MESSAGE value="save productsCart and reviews to LocalStorage" />
+    <option name="LAST_COMMIT_MESSAGE" value="save productsCart and reviews to LocalStorage" />
   </component>
 </project>

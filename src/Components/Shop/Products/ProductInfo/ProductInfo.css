@@ -8,14 +8,18 @@
   width: 100%;
   height: 400px;
   flex: 0 1 400px;
+  position: sticky;
+  top: 120px;
 }
 .product-image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.product-description {
-  flex: 1;
+.product-box {
+  flex: 1 1 600px;
+}
+.product-box__desc {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -84,7 +88,7 @@
 }
 .product-review {
   flex: 1 1 100%;
-  max-width: 480px;
+  max-width: 780px;
 }
 .product-review__form {
   gap: 16px;

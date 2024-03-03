@@ -4,6 +4,7 @@ import {NavLink, Route, Routes} from "react-router-dom";
 import Shop from "./Components/Shop/Shop";
 import ShoppingCart from "./Components/ShoppingCart/ShoppingCart";
 import {useSelector} from "react-redux";
+import Main from "./Components/Main/Main";
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
             <header className="header">
                 <nav className="nav">
                     <ul>
-                        <li data-flex="1"><NavLink to='/'>Shop</NavLink></li>
+                        <li><NavLink to='/'>Main</NavLink></li>
+                        <li data-flex="1"><NavLink to='/shop'>Shop</NavLink></li>
                         <li>
                             <NavLink to='/shoppingCart'>
                                 Shopping Cart
@@ -28,7 +30,8 @@ function App() {
             </header>
             <main className="main">
                 <Routes>
-                    <Route path='/*' element={<Shop/>}/>
+                    <Route path='/*' element={<Main/>}/>
+                    <Route path='/shop/*' element={<Shop/>}/>
                     <Route path='/shoppingCart' element={<ShoppingCart/>}/>
                 </Routes>
             </main>

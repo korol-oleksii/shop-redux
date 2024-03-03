@@ -62,7 +62,6 @@
 
 .main {
   padding: 112px 32px 24px;
-  height: 100%;
 }
 
 .counter-badge {
@@ -78,4 +77,25 @@
   position: absolute;
   top: -4px;
   right: -4px;
+}
+
+.show-more {
+  position: relative;
+  margin: 16px auto 24px;
+  min-width: 144px;
+  width: fit-content;
+
+  > * {
+    border-radius: 8px;
+    background-color: #3389f1;
+    color: #fff;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      transform: scale(.97);
+      color: yellow;
+    }
+  }
 }
